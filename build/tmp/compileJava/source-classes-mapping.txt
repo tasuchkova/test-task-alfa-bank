@@ -1,0 +1,8 @@
+ru/alfabank/test/task/Application.java
+ ru.alfabank.test.task.Application
+ru/alfabank/test/task/services/GiphyProviderService.java
+ ru.alfabank.test.task.services.GiphyProviderService
+ru/alfabank/test/task/gateways/OpenExchangeRatesGateway.java
+ ru.alfabank.test.task.gateways.OpenExchangeRatesGateway
+ru/alfabank/test/task/controllers/TestTaskController.java
+ ru.alfabank.test.task.controllers.TestTaskController

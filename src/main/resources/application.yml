@@ -1,0 +1,5 @@
+server.port: 24043
+openExchangeRates:
+  appId: 5b96814bb904461f8965529ee1c43e4b
+  basePath: https://openexchangerates.org/api/
+  endpoint: latest.json
