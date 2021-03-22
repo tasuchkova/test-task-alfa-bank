@@ -4,17 +4,21 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
-import ru.alfabank.test.task.services.GiphyProviderService;
+import ru.alfabank.test.task.services.GiphyWealthStatusProviderService;
 
 @RestController
 public class TestTaskController {
 
     @Autowired
-    private GiphyProviderService giphyProviderService;
+    private GiphyWealthStatusProviderService giphyStatusProviderService;
 
     @GetMapping(path = "/currency")
-    public String getGiphy(@RequestParam("currency") String currencyCode) {
-//        TODO:  сделать валидацию переданного кода валюты
-        return giphyProviderService.getGiphy(currencyCode);
+    public String getGiphyAccordingToExchangeRates(@RequestParam("currency") String currencyCode) {
+        return giphyStatusProviderService.getGiphyWealthStatus(currencyCode);
+    }
+
+    @GetMapping()
+    public String getHealthCheck() {
+        return "Hello, world! I am OK!";
     }
 }

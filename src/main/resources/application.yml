@@ -2,4 +2,9 @@ server.port: 24043
 openExchangeRates:
   appId: 5b96814bb904461f8965529ee1c43e4b
   basePath: https://openexchangerates.org/api/
-  endpoint: latest.json
+  endpoint: historical/{date}.json
+#  baseCurrency: RUB
+#  Закомментировано, так как в бесплатной версии OpenExchangeRatesAPI функционал недоступен.
+giphy:
+  api_key: kZcEoMmyUrAg5zZV3gMDWUrxb2TQkPfv
+  endpoint: http://api.giphy.com/v1/gifs/random
