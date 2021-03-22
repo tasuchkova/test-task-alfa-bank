@@ -11,7 +11,8 @@ $ curl -X GET "localhost:24043//currency?currency=EUR"
 
 (Вместо EUR подставьте трёхзначный код интересующей Вас валюты).
 
-Docker deploy
+Docker deploy:
+
 $ docker build -t such/test-task-alfa-bank:latest .
 
 $ docker run -p 24043:24043 such/test-task-alfa-bank
